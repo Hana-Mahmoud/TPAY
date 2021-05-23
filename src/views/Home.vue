@@ -9,17 +9,18 @@
     />
 <Filter/>
     <input id="searchtext" v-show="showAddgame" type="text" name="searchText" />
-    <div id="droppanel" v-show="showElipsesV">
+    <div id="droppanel" class="col-lg-3 col-md-3 col-sm-6" v-show="showElipsesV">
       <p id="panel1">Please add your accout details</p>
       <p class="label">Username / Email</p>
       <input type="text" placeholder="Type your username here" />
+      <br/><br/>
       <p class="label">Password</p>
       <input type="text" placeholder="Type your password " /><i
         id="eye"
         class="fas fa-eye-slash"
       ></i>
       <p id="forgot">Forgot Password?</p>
-      <button id="mybttnlogin" class="btn">LOGIN</button>
+      <button id="mybttnlogin" class="mybutton">LOGIN</button>
       <p id="signup">Dont have an account? Sign up!</p>
     </div>
 

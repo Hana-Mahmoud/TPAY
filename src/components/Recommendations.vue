@@ -1,16 +1,18 @@
 <template>
-  <div id="container" class="row">
-     <div class="col-8 offset-1  mb-3">
-    <p id="left" >Most Recommended</p>
-    <p id="right">SEE ALL <i id="icon" class="fas fa-chevron-right"></i></p>
+  <div class="mycontainer   col-lg-7 col-md-8 col-sm-10">
+     <div class="row">
+    <p id="left" class="col-lg-10 col-md-6 col-sm-6 " >Most Recommended</p>
+    <p id="right" class="col-lg-2 col-md-4 col-sm-4  offset-sm-2 offset-md-2 offset-lg-0">SEE ALL <i id="icon" class="fas fa-chevron-right"></i></p>
      </div>
     
-    <div id="card" class="row" :key="game.id" v-for="game in this.$store.state.games">
-      <img class="col-2" :src="game.thumbnail" :alt="game.id" />
+    <div class="row">
+    <div id="card" class="col-lg-2 col-md-3 col-sm-3 mx-sm-3 mx-lg-2" :key="game.id" v-for="game in this.$store.state.games">
+      <img  :src="game.thumbnail" :alt="game.id" />
 
-      <h3 id="title" class="col-2">{{ game.title }}</h3>
+      <h3 id="title">{{ game.title }}</h3>
 
-      <ButtonGame :id="game.id"/>
+      <ButtonGame   :id="game.id"/>
+    </div>
     </div>
   </div>
 </template>

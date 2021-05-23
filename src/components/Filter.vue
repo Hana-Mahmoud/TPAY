@@ -34,6 +34,8 @@ width: 100%;
 flex-shrink:0;
 background-color: white;
 overflow: scroll;
+padding-top: 15px;
+box-shadow: 0 2px 10px 0 rgba(112, 112, 112, 0.459);
 }
 ::-webkit-scrollbar{
     width: 10px;

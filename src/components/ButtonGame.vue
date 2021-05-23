@@ -1,6 +1,6 @@
 <template>
 <router-link :to="`/${id}`">
-  <button class="btn">MORE INFO</button>
+  <button class="mybutton">MORE INFO</button>
 </router-link>
 </template>
 

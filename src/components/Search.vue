@@ -1,5 +1,5 @@
 <template>
-<div id="bo">
+<div>
 <span>
   <i @click="onClick()" id="icon" class="fas fa-search"></i>
   <i @click="onClickelipse()" class="fas fa-ellipsis-v"></i>
@@ -29,6 +29,7 @@ span{
 }
 #icon{
     padding-right: 24px;
+   
 }
 
 </style>
