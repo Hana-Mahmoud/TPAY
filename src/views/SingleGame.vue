@@ -11,7 +11,7 @@
          <div id="mycon" class="mycontainer col-lg-7 col-md-8 col-sm-10">
              <img :src="game.thumbnail"/>
          </div>
-         <div id="mycoon" class="mycontainer">
+         <div id="mycoon" class="mycontainer col-lg-7 col-md-8 col-sm-10">
               <p id="title">{{ game.title }}</p>
               <p id="genre">{{ game.genre }}</p>
                <p id="desc">{{ game.short_description }}</p>
@@ -21,9 +21,9 @@
          </div>
     </div>
 
-    <div class="container">
+    
       <Recommendations />
-    </div>
+    
   </div>
 </template>
 
